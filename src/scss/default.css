@@ -15,26 +15,29 @@ html {
   scroll-behavior: smooth;
 }
 
-.welcome {
-  background: url(../assets/images/clouds-g8eee36838_1920.jpg);
+.menu {
+  background: url(../assets/images/menu.jpg);
   height: 100%;
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.welcome__rain {
+.menu img {
+  padding-right: 5%;
+}
+.menu__r {
   justify-content: center;
   width: 50%;
   height: 10%;
   color: #fff;
   font-family: "Open Sans", sans-serif;
 }
-.welcome__rain__rain h1 {
+.menu__r__r h1 {
   font-size: 30px;
   font-weight: 700;
 }
-.welcome__rain__rain p {
+.menu__r__r p {
   font-weight: 400;
   font-size: 20px;
   width: 100%;
@@ -44,14 +47,15 @@ html {
 
 .mainTwo {
   height: 90%;
-  background: linear-gradient(#2442AC, #2834be);
+  background: linear-gradient(#2b4bbe, #a3a5bd);
 }
-.mainTwo__top {
+.mainTwo__h {
   justify-content: center;
   display: flex;
   padding: 15px;
+  gap: 5%;
 }
-.mainTwo__top__rain2 {
+.mainTwo__h__r2 {
   justify-content: center;
   margin-top: 30px;
   width: 50%;
@@ -59,10 +63,10 @@ html {
   color: #fff;
   font-family: "Open Sans", sans-serif;
 }
-.mainTwo__top__rain2__txt {
+.mainTwo__h__r2__txt {
   color: white;
 }
-.mainTwo__top__rain2 h1 {
+.mainTwo__h__rain2 h1 {
   font-size: 25px;
   font-weight: 700;
 }
@@ -91,17 +95,17 @@ html {
 .mainTwo__section .mainTwo__section__searchDiv img {
   width: 40%;
 }
-.mainTwo__degree {
+.mainTwo__dg {
   display: flex;
   justify-content: space-evenly;
   height: 15%;
   padding: 20px;
 }
-.mainTwo__degree__pluie {
+.mainTwo__dg__p {
   justify-content: space-evenly;
   display: flex;
 }
-.mainTwo__degree__nombre {
+.mainTwo__dg__nb {
   font-size: 25px;
   font-family: "Open Sans", sans-serif;
   color: #fff;
@@ -126,8 +130,81 @@ html {
   font-family: "Open Sans", sans-serif;
   font-weight: 700;
 }
+.mainTwo__heure {
+  height: 11%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.mainTwo__heure__1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5%;
+  height: 80%;
+  width: 90%;
+  background-color: #fff;
+  border-radius: 25px;
+  font-family: "Open Sans", sans-serif;
+}
+.mainTwo__heure__1__p1 {
+  color: #cf1d1d;
+}
 .mainTwo__graph {
-  height: 30%;
+  height: 40%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.mainTwo__graph__1 {
+  height: 80%;
+  width: 80%;
+  background-color: #fff;
+  border-radius: 10px;
+}
+.mainTwo__graph__1__1 {
+  display: flex;
+  height: 100%;
+}
+.mainTwo__graph__1__1__ard {
+  display: flex;
+  align-items: flex-end;
+  height: 100%;
+  width: 75%;
+  background: linear-gradient(#2b4bbe, #a3a5bd);
+  -webkit-clip-path: polygon(0% 15%, 19% 54%, 37% 23%, 59% 35%, 77% 27%, 100% 43%, 100% 85%, 100% 100%, 85% 100%, 15% 100%, 0 100%, 0% 85%);
+          clip-path: polygon(0% 15%, 19% 54%, 37% 23%, 59% 35%, 77% 27%, 100% 43%, 100% 85%, 100% 100%, 85% 100%, 15% 100%, 0 100%, 0% 85%);
+}
+.mainTwo__graph__1__1__ard__p {
+  display: flex;
+  gap: 10%;
+  font-size: 0.7rem;
+  padding-left: 8px;
+  font-family: "Open Sans", sans-serif;
+  color: #fff;
+  padding-bottom: 5px;
+}
+.mainTwo__graph__1__1__arg {
+  height: 100%;
+  width: 25%;
+}
+.mainTwo__graph__1__1__arg__d1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 33%;
+}
+.mainTwo__graph__1__1__arg__d2 {
+  height: 33%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.mainTwo__graph__1__1__arg__d3 {
+  height: 34%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .bottom {
@@ -155,7 +232,7 @@ html {
   text-decoration: none;
   font-family: "Open Sans", sans-serif;
   font-weight: 700;
-  color: #102a88;
+  color: #2446c4;
 }
 
 .bottom__carte__carteImg {
@@ -166,5 +243,24 @@ html {
   text-decoration: none;
   font-family: "Open Sans", sans-serif;
   font-weight: 700;
-  color: rgba(16, 42, 136, 0.4901960784);
+  color: rgba(29, 63, 185, 0.4901960784);
 }
+
+.bottom1 {
+  position: absolute;
+  left: -1000%;
+  z-index: -100;
+  opacity: 0;
+}
+
+#Three {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+}
+#Three iframe {
+  border-radius: 5px;
+  width: 100%;
+}/*# sourceMappingURL=default.css.map */

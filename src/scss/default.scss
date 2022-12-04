@@ -16,24 +16,29 @@ html{
     scroll-behavior: smooth;
   }
 
-  .welcome{
-    background: url(../assets/images/clouds-g8eee36838_1920.jpg);
+  .menu{
+    background: url(../assets/images/menu.jpg);
     height: 100%;
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
-      &__rain{
+
+    & img{
+      padding-right: 5%;
+    }
+
+      &__r{
       justify-content: center;
       width: 50%;
       height: 10%;
       color: $color-white;
       font-family: 'Open Sans', sans-serif;
-        &__rain h1{
+        &__r h1{
               font-size: 30px;
               font-weight: 700;
           }
-          &__rain p{
+          &__r p{
               font-weight: 400;
               font-size: 20px;
               width: 100%;
@@ -45,13 +50,16 @@ html{
 
 .mainTwo{
   height: 90%;
-  background: linear-gradient(#2442AC, #2834be);
+  background: linear-gradient(#2b4bbe, #a3a5bd);
 
-  &__top{
+
+  &__h{
   justify-content: center;
   display: flex;
   padding: 15px;
-    &__rain2{
+  gap: 5%;
+
+    &__r2{
     justify-content: center;
     margin-top: 30px;
     width: 50%;
@@ -104,16 +112,16 @@ input[type=text] {
 
 }
 
-&__degree{
+&__dg{
   display: flex;
   justify-content: space-evenly;
   height: 15%;
   padding: 20px;
-    &__pluie{
+    &__p{
     justify-content: space-evenly;
     display: flex;
     }
-      &__nombre{
+      &__nb{
         font-size: 25px;
         font-family:'Open Sans', sans-serif;
         color: #fff;
@@ -146,8 +154,92 @@ input[type=text] {
 
 }
 
+&__heure{
+  height: 11%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &__1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5%;
+    height: 80%;
+    width: 90%;
+    background-color: #fff;
+    border-radius: 25px;
+    font-family:'Open Sans', sans-serif;
+
+    &__p1{
+      color: #cf1d1d;
+    }
+  }
+}
+
 &__graph{
-height: 30%;
+height: 40%;
+display: flex;
+align-items: center;
+justify-content: center;
+
+  &__1{
+    height: 80%;
+    width: 80%;
+    background-color: #fff;
+    border-radius: 10px;
+    
+    &__1{
+      display: flex;
+      height: 100%;
+
+      &__ard{
+        display: flex;
+        align-items: flex-end;
+        height: 100%;
+        width: 75%;
+        background: linear-gradient(#2b4bbe, #a3a5bd);
+        clip-path: polygon(0% 15%, 19% 54%, 37% 23%, 59% 35%, 77% 27%, 100% 43%, 100% 85%, 100% 100%, 85% 100%, 15% 100%, 0 100%, 0% 85%);
+
+          &__p{
+            display: flex;
+            gap: 10%;
+            font-size: 0.7rem;
+            padding-left: 8px;
+            font-family:'Open Sans', sans-serif;
+            color: #fff;
+            padding-bottom: 5px;
+          }
+      }
+
+      &__arg{
+        height: 100%;
+        width: 25%;
+
+        &__d1{
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          height: 33%;
+        }
+
+        &__d2{
+          height: 33%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+
+        &__d3{
+          height: 34%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+      }
+    }
+    
+  }
 }
 
 }
@@ -177,7 +269,7 @@ height: 30%;
   text-decoration: none;
   font-family: 'Open Sans', sans-serif;
   font-weight: 700;
-  color: #102a88;
+  color: #2446c4;
 }
 
 .bottom__carte__carteImg{
@@ -188,5 +280,24 @@ height: 30%;
   text-decoration: none;
   font-family: 'Open Sans', sans-serif;
   font-weight: 700;
-  color: #102a887d;
+  color: #1d3fb97d;
 }
+.bottom1{
+  position: absolute;
+  left: -1000%;
+  z-index: -100;
+  opacity: 0;
+}
+
+#Three{
+  display: flex;
+    align-items: center;
+    justify-content: center;
+  & iframe{
+    border-radius: 5px;
+    width: 100%;
+  }
+  display: flex;
+  align-items: center;
+}
+
